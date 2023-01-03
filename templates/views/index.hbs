@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>links}}
+</head>
+
+<body>
+    {{>navbar}}
+
+
+    <div class="container-fluid main-header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <!-- main header left -->
+                    <div class="col-md-6 col-12 main-header-left">
+                        <p>Welcome to weather app</p>
+                        <h1>Get The Latest <span class="var-col">Weather</span>  of Your City</h1>
+                        <a href="/weather"><button class="btn1">Check Now</button></a>
+                    </div>
+                    <!-- main-header right -->
+                    <div class="col-md-6 col-12 main-header-right">
+                        <div id="carouselExampleControls" class="carousel slide"  data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active " data-bs-interval="3000">
+                                <div class="season">
+                                  WIN TER
+                                </div>
+                                <img src="images/winter1.jpeg" class=" " alt="...">
+                                <div class="symbol winter">
+                                  <i class="fa-solid fa-snowflake "></i>
+                                </div>
+                              </div>
+                              <div class="carousel-item" data-bs-interval="3000">
+                                <div class="season">
+                                 SPR ING
+                                </div>
+                                <img src="images/spring1.jpeg" class=" " alt="...">
+                                <div class="symbol spring">
+                                  <i class="fa-solid fa-fan "></i>
+                                </div>
+                              </div>
+                              <div class="carousel-item" data-bs-interval="3000">
+                                <div class="season">
+                                 SUM MER
+                                </div>
+                                <img src="images/summer1.jpeg" class=" " alt="...">
+                                <div class="symbol summer">
+                                  <i class="fa-solid fa-sun "></i>
+                                </div>
+                              </div>
+                              <div class="carousel-item" data-bs-interval="3000">
+                                <div class="season">
+                                 AUT UMN
+                                </div>
+                                <img src="images/autumn1.jpg" class=" " alt="...">
+                                <div class="symbol autumn">
+                                  <i class="fa-solid fa-leaf "></i>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer section  -->
+    {{>footer}}
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
