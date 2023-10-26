@@ -44,10 +44,10 @@
 
         const getCurrentDay = () => {
             var today = new Array(7);
-            today[0] = "Mon"; today[4] = "Fri";
-            today[1] = "Tue"; today[5] = "Sat";
-            today[2] = "Wed"; today[6] = "Sun";
-            today[3] = "Thu";
+            today[1] = "Mon"; today[5] = "Fri";
+            today[2] = "Tue"; today[6] = "Sat";
+            today[3] = "Wed"; today[0] = "Sun";
+            today[4] = "Thu";
             var month = [
                 "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul",
                 "Aug", "Sep", "Oct", "Nov", "Dec"
@@ -60,7 +60,7 @@
             if (hours > 12) hours -= 12;
             if (mins < 10) mins = '0' + mins;
             var fun = new Array(2);
-            fun[0]=`${today[currentTime.getDay() - 1]}`;
+            fun[0]=`${today[currentTime.getDay()]}`;
             fun[1]=`${currentTime.getDate()} ${month[currentTime.getMonth()]}`;
             return fun;
             //return `${today[currentTime.getDay() - 1]} | ${month[currentTime.getMonth()]} ${currentTime.getDate()} | ${hours}:${mins}${period}`;
